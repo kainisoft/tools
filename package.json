@@ -1,6 +1,6 @@
 {
   "name": "@kainisoft/tools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Feature generator",
   "scripts": {
     "build": "tsc -p tsconfig.json",
