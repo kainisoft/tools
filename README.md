@@ -1,4 +1,4 @@
-# Getting Started With Schematics
+# Angular Schematic Feature Generator
 
 This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
 
@@ -25,4 +25,3 @@ npm publish
 ```
 
 That's it!
- 
