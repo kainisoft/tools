@@ -11,7 +11,7 @@
   ],
   "author": "Kairat Bakytov kainisoft@gmail.com",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/kainisoft/tools",
   "schematics": "./src/collection.json",
   "dependencies": {
     "@angular-devkit/core": "9.1.7",
