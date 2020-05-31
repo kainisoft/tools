@@ -1,28 +1,12 @@
-# Getting Started With Schematics
+# Angular Schematic Feature Generator
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+This repository is a Schematic implementation that generate feature module for your project.
 
-### Testing
-
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
-
-Check the documentation with
-```bash
-schematics --help
-```
-
-### Unit Testing
-
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
+Simply run:
 
 ```bash
-npm run build
-npm publish
+ng add @kainisoft/tools
 ```
 
+Then define your feature module name!<br>
 That's it!
- 

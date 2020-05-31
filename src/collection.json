@@ -5,6 +5,10 @@
       "description": "A blank schematic.",
       "factory": "./feature",
       "schema": "./feature/schema.json"
+    },
+    "ng-add": {
+      "factory": "./ng-add/index",
+      "description": "Add schematic"
     }
   }
 }
