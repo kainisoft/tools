@@ -1,0 +1,16 @@
+import {HttpClient} from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {AbstractService} from '../../../core/services/abstract.service';
+
+@Injectable()
+export class <%= classify(name) %>Service extends AbstractService {
+  constructor(
+    http: HttpClient
+  ) {
+    super(http);
+  }
+
+  get uri(): string {
+    return '';
+  }
+}

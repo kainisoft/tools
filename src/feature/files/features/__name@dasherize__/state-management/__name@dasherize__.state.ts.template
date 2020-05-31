@@ -1,0 +1,14 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import {AbstractEntityState, AbstractState} from '../../../core/state-management/abstract-state';
+
+export interface <%= classify(name) %> extends AbstractState {
+
+}
+
+export interface <%= classify(name) %>State extends AbstractEntityState<<%= classify(name) %>> {
+
+}

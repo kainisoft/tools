@@ -1,0 +1,31 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import {NgModule} from '@angular/core';
+import {ShareModule} from '../../../shared/share.module';
+import {<%= classify(name) %>ListItemComponent} from './components/<%= dasherize(name) %>-list-item/<%= dasherize(name) %>-list-item.component';
+import {<%= classify(name) %>ListComponent} from './components/<%= dasherize(name) %>-list/<%= dasherize(name) %>-list.component';
+import {<%= classify(name) %>ContainerComponent} from './containers/<%= dasherize(name) %>/<%= dasherize(name) %>.container';
+
+@NgModule({
+  declarations: [
+    <%= classify(name) %>ContainerComponent,
+
+    <%= classify(name) %>ListComponent,
+    <%= classify(name) %>ListItemComponent,
+  ],
+  imports: [
+    ShareModule,
+  ],
+  exports: [
+
+  ],
+  providers: [
+
+  ]
+})
+export class <%= classify(name) %>UiModule {
+
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "tools",
+  "title": "Feature generator",
+  "type": "object",
+  "description": "Some description",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Feature name",
+      "x-prompt": "What is name of feature"
+    }
+  },
+  "required": ["name"]
+}

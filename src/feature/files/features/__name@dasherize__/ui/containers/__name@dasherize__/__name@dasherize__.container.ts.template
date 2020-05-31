@@ -1,0 +1,21 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-<%= dasherize(name) %>',
+  templateUrl: './<%= dasherize(name) %>.container.html',
+  styleUrls: ['./<%= dasherize(name) %>.container.scss']
+})
+export class <%= classify(name) %>ContainerComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+
+  }
+
+}

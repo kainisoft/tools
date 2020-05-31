@@ -1,0 +1,21 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import {Injectable} from '@angular/core';
+import {Actions} from '@ngrx/effects';
+import {AbstractEffects} from '../../../core/state-management/abstract-effects';
+import {<%= classify(name) %>Service} from '../services/<%= dasherize(name) %>.service';
+import {<%= classify(name) %>Actions} from './<%= dasherize(name) %>.actions';
+
+@Injectable()
+export class <%= classify(name) %>Effects extends AbstractEffects {
+  constructor(
+    protected actions: Actions,
+    protected <%= camelize(name) %>Actions: <%= classify(name) %>Actions,
+    protected <%= camelize(name) %>Service: <%= classify(name) %>Service,
+  ) {
+    super(actions, <%= camelize(name) %>Actions);
+  }
+}

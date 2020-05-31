@@ -1,0 +1,34 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {<%= classify(name) %>Resolver} from './resolvers/<%= dasherize(name) %>.resolve';
+import {<%= classify(name) %>ContainerComponent} from './ui/containers/<%= dasherize(name) %>/<%= dasherize(name) %>.container';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: <%= classify(name) %>ContainerComponent,
+    resolve: {
+      <%= camelize(name) %>: <%= classify(name) %>Resolver,
+    }
+  }
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forChild(routes)
+  ],
+  exports: [
+    RouterModule
+  ],
+  providers: [
+    <%= classify(name) %>Resolver,
+  ]
+})
+export class <%= classify(name) %>RoutingModule {
+
+}

@@ -1,0 +1,22 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-<%= dasherize(name) %>-list-item',
+  templateUrl: './<%= dasherize(name) %>-list-item.component.html',
+  styleUrls: ['./<%= dasherize(name) %>-list-item.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class <%= classify(name) %>ListItemComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+
+  }
+
+}

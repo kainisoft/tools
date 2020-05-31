@@ -1,0 +1,27 @@
+{
+  "name": "@kainisoft/tools",
+  "version": "0.0.1",
+  "description": "Feature generator",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "Kairat Bakytov kainisoft@gmail.com",
+  "license": "MIT",
+  "repository": "",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "9.1.7",
+    "@angular-devkit/schematics": "9.1.7",
+    "typescript": "3.8.2"
+  },
+  "devDependencies": {
+    "@schematics/angular": "9.1.3",
+    "@types/node": "12.11.1",
+    "@types/jasmine": "3.5.0",
+    "jasmine": "3.5.0"
+  }
+}

@@ -1,0 +1,26 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import {Injectable} from '@angular/core';
+import {ActivatedRouteSnapshot, Resolve, RouterStateSnapshot} from '@angular/router';
+import {Actions} from '@ngrx/effects';
+import {Observable} from 'rxjs';
+import {<%= classify(name) %>Actions} from '../state-management/<%= dasherize(name) %>.actions';
+import {<%= classify(name) %>Reducer} from '../state-management/<%= dasherize(name) %>.reducer';
+
+@Injectable()
+export class <%= classify(name) %>Resolver implements Resolve<any> {
+  constructor(
+    protected <%= camelize(name) %>Reducer: <%= classify(name) %>Reducer,
+    protected <%= camelize(name) %>Actions: <%= classify(name) %>Actions,
+    protected update: Actions,
+  ) {
+
+  }
+
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> {
+    return undefined;
+  }
+}

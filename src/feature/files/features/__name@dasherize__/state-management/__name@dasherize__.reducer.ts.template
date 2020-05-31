@@ -1,0 +1,30 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import {Injectable} from '@angular/core';
+import {AbstractAction} from '../../../core/state-management/abstract-actions';
+import {AbstractReducer} from '../../../core/state-management/abstract-reducer';
+import {<%= classify(name) %>Actions} from './<%= dasherize(name) %>.actions';
+import {<%= classify(name) %>Payload} from './<%= dasherize(name) %>.payload';
+import {<%= classify(name) %>, <%= classify(name) %>State} from './<%= dasherize(name) %>.state';
+
+@Injectable()
+export class <%= classify(name) %>Reducer extends AbstractReducer<<%= classify(name) %>, <%= classify(name) %>State, <%= classify(name) %>Payload> {
+  constructor(
+    protected actions: <%= classify(name) %>Actions
+  ) {
+    super(actions);
+  }
+
+  get storeName(): string {
+    return '<%= dasherize(name) %>';
+  }
+
+  get reducers(): {[p: string]: (action: AbstractAction<<%= classify(name) %>Payload>, state: <%= classify(name) %>State) => <%= classify(name) %>State} {
+    return {
+
+    };
+  }
+}

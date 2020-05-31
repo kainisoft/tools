@@ -1,0 +1,26 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import { NgModule } from '@angular/core';
+import {<%= classify(name) %>Resolver} from './resolvers/<%= dasherize(name) %>.resolve';
+import {<%= classify(name) %>Service} from './services/<%= dasherize(name) %>.service';
+import {<%= classify(name) %>RoutingModule} from './<%= dasherize(name) %>-routing.module';
+import {<%= classify(name) %>StateManagementModule} from './state-management/<%= dasherize(name) %>-state-management.module';
+import {<%= classify(name) %>UiModule} from './ui/<%= dasherize(name) %>-ui.module';
+
+@NgModule({
+  imports: [
+    <%= classify(name) %>StateManagementModule,
+    <%= classify(name) %>RoutingModule,
+    <%= classify(name) %>UiModule,
+  ],
+  providers: [
+    <%= classify(name) %>Resolver,
+    <%= classify(name) %>Service,
+  ]
+})
+export class <%= classify(name) %>Module {
+
+}

@@ -1,0 +1,23 @@
+/**
+ * Kairat Bakytov
+ * kainisoft@gmail.com
+ */
+
+import {Injectable} from '@angular/core';
+import {Store} from '@ngrx/store';
+import {AbstractActions} from '../../../core/state-management/abstract-actions';
+import {<%= classify(name) %>Payload} from './<%= dasherize(name) %>.payload';
+import {<%= classify(name) %>} from './<%= dasherize(name) %>.state';
+
+@Injectable()
+export class <%= classify(name) %>Actions extends AbstractActions<<%= classify(name) %>Payload> {
+  constructor(
+    store: Store<<%= classify(name) %>>
+  ) {
+    super(store);
+  }
+
+  getEntity(): string {
+      return '[<%= dasherize(name) %>]';
+    }
+}
